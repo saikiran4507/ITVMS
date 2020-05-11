@@ -30,7 +30,7 @@ public class BaseClass {
 	public void setUp() {
 		logger = Logger.getLogger("ITMS");
 		PropertyConfigurator.configure("log4j.properties");
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 			driver = new ChromeDriver();
 		driver.get(baseUrl);
 		driver.manage().window().maximize();
