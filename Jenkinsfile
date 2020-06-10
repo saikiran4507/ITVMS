@@ -8,12 +8,11 @@ pipeline{
     {
         stage('clone and compile'){
             steps{
-                git ''
-                sh ' mvn clean test'
+                git 'https://github.com/saikiran4507/ITVMS.git'
+                sh ' mvn clean test '
             }
 
         }
     }
 
-}
 }
